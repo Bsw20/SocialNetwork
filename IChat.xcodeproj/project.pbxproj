@@ -20,6 +20,9 @@
 		30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */; };
 		30AE6454251C796F006CBCD4 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6453251C796F006CBCD4 /* OneLineTextField.swift */; };
 		30AE6458251C8CCA006CBCD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */; };
+		30AE645B251CD1DA006CBCD4 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE645A251CD1DA006CBCD4 /* SetupProfileViewController.swift */; };
+		30AE645E251CD48B006CBCD4 /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE645D251CD48B006CBCD4 /* AddPhotoView.swift */; };
+		30AE6463251CE668006CBCD4 /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6462251CE668006CBCD4 /* SegmentedControl + Extension.swift */; };
 		30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */; };
 		30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +43,9 @@
 		30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		30AE6453251C796F006CBCD4 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		30AE645A251CD1DA006CBCD4 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
+		30AE645D251CD48B006CBCD4 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		30AE6462251CE668006CBCD4 /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 		30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +89,7 @@
 				30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */,
 				30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */,
 				30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */,
+				30AE645A251CD1DA006CBCD4 /* SetupProfileViewController.swift */,
 			);
 			path = IChat;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				309FB95925189E77002DEC22 /* UIColor + Extension.swift */,
 				30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */,
 				30AE6447251C711A006CBCD4 /* StackView + Extension.swift */,
+				30AE6462251CE668006CBCD4 /* SegmentedControl + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 		30AE6441251C62A2006CBCD4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				30AE645D251CD48B006CBCD4 /* AddPhotoView.swift */,
 				30AE6443251C65CE006CBCD4 /* ButtonFormView.swift */,
 				30AE6453251C796F006CBCD4 /* OneLineTextField.swift */,
 				30AE643F251C6290006CBCD4 /* UIKit */,
@@ -183,10 +192,13 @@
 				30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */,
 				309FB95725189C82002DEC22 /* UIFont + Extension.swift in Sources */,
 				30AA413E25187B4600C8675E /* AuthViewController.swift in Sources */,
+				30AE645B251CD1DA006CBCD4 /* SetupProfileViewController.swift in Sources */,
 				30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */,
 				30AE6444251C65CE006CBCD4 /* ButtonFormView.swift in Sources */,
+				30AE645E251CD48B006CBCD4 /* AddPhotoView.swift in Sources */,
 				30AA413A25187B4600C8675E /* AppDelegate.swift in Sources */,
 				30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */,
+				30AE6463251CE668006CBCD4 /* SegmentedControl + Extension.swift in Sources */,
 				309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */,
 				30AA413C25187B4600C8675E /* SceneDelegate.swift in Sources */,
 				309FB954251892A2002DEC22 /* UIButton + Extension.swift in Sources */,
