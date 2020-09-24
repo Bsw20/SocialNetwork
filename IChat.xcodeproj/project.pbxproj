@@ -19,6 +19,7 @@
 		30AE644E251C74FC006CBCD4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */; };
 		30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */; };
 		30AE6454251C796F006CBCD4 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6453251C796F006CBCD4 /* OneLineTextField.swift */; };
+		30AE6458251C8CCA006CBCD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */; };
 		30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */; };
 		30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		30AE6453251C796F006CBCD4 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
+		30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 		30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +82,7 @@
 				30AE6441251C62A2006CBCD4 /* Extensions */,
 				30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */,
 				30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */,
+				30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */,
 			);
 			path = IChat;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */,
 				30AA413C25187B4600C8675E /* SceneDelegate.swift in Sources */,
 				309FB954251892A2002DEC22 /* UIButton + Extension.swift in Sources */,
+				30AE6458251C8CCA006CBCD4 /* LoginViewController.swift in Sources */,
 				30AE6448251C711A006CBCD4 /* StackView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

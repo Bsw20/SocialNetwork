@@ -76,7 +76,7 @@ struct ViewControllerProvider: PreviewProvider {
     struct ContainerView: UIViewControllerRepresentable {
         let viewController = AuthViewController()
         
-        func makeUIViewController(context: Context) -> some UIViewController {
+        func makeUIViewController(context: Context) -> some AuthViewController {
             return viewController
         }
         
