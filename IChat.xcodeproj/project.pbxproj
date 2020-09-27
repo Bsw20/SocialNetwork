@@ -16,7 +16,6 @@
 		30AA414325187B4A00C8675E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AA414225187B4A00C8675E /* Assets.xcassets */; };
 		30AE6444251C65CE006CBCD4 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6443251C65CE006CBCD4 /* ButtonFormView.swift */; };
 		30AE6448251C711A006CBCD4 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6447251C711A006CBCD4 /* StackView + Extension.swift */; };
-		30AE644E251C74FC006CBCD4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */; };
 		30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */; };
 		30AE6454251C796F006CBCD4 /* OneLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6453251C796F006CBCD4 /* OneLineTextField.swift */; };
 		30AE6458251C8CCA006CBCD4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */; };
@@ -28,6 +27,7 @@
 		30AE64A7251DEABC006CBCD4 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AE64A6251DEABC006CBCD4 /* PeopleViewController.swift */; };
 		30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */; };
 		30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */; };
+		30E656862520959F00223880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E656882520959F00223880 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +42,6 @@
 		30AA414725187B4A00C8675E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AE6443251C65CE006CBCD4 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		30AE6447251C711A006CBCD4 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
-		30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		30AE6453251C796F006CBCD4 /* OneLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineTextField.swift; sourceTree = "<group>"; };
 		30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		30AE64A6251DEABC006CBCD4 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 		30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
+		30E656872520959F00223880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 				30AE649D251DE74F006CBCD4 /* SignIn&Auth */,
 				30AE64A1251DE935006CBCD4 /* Controllers */,
 				30AE6441251C62A2006CBCD4 /* Extensions */,
-				30AE644D251C74FC006CBCD4 /* Launch Screen.storyboard */,
+				30E656882520959F00223880 /* LaunchScreen.storyboard */,
 			);
 			path = IChat;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30AE644E251C74FC006CBCD4 /* Launch Screen.storyboard in Resources */,
+				30E656862520959F00223880 /* LaunchScreen.storyboard in Resources */,
 				30AA414325187B4A00C8675E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +236,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		30E656882520959F00223880 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30E656872520959F00223880 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		30AA414825187B4A00C8675E /* Debug */ = {
