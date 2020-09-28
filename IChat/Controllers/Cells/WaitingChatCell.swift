@@ -9,6 +9,11 @@ import Foundation
 import UIKit
 
 class WaitingChatCell: UICollectionViewCell, SelfConfiguringCell {
+    func configure<U>(with value: U) where U : Hashable {
+        guard let chat = value as? MChat else { return }
+        friendImageView.image = UIImage(named: chat.userImageString)
+    }
+    
     static var reuseId: String = "WaitingChatCell"
     
     let friendImageView = UIImageView()
@@ -22,9 +27,6 @@ class WaitingChatCell: UICollectionViewCell, SelfConfiguringCell {
         setupConstraints()
     }
     
-    func configure(with value: MChat) {
-        friendImageView.image = UIImage(named: value.userImageString)
-    }
     
     private func setupConstraints() {
         friendImageView.translatesAutoresizingMaskIntoConstraints = false

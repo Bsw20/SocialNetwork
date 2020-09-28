@@ -42,7 +42,7 @@ class PeopleViewController: UIViewController {
         
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseId)
         
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid")
+        collectionView.register(UserCell.self, forCellWithReuseIdentifier: UserCell.reuseId)
     }
         
     
@@ -69,7 +69,7 @@ class PeopleViewController: UIViewController {
     
 }
 
-
+//MARK: - DataSource
 extension PeopleViewController {
     private func createDataSourse() {
         dataSource = UICollectionViewDiffableDataSource<Section, MUser> (collectionView: collectionView, cellProvider: { (collectionView, indexPath, user) -> UICollectionViewCell? in
@@ -78,10 +78,8 @@ extension PeopleViewController {
             switch section {
             
             case .users:
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellid", for: indexPath)
                 
-                cell.backgroundColor = .systemBlue
-                return cell
+                return self.configure(collectionView: collectionView, cellType: UserCell.self, with: user, for: indexPath)
             }
         })
         
@@ -99,6 +97,7 @@ extension PeopleViewController {
     }
 }
 
+//MARK: - Layout
 extension PeopleViewController {
     private func createCompositionalLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
@@ -152,13 +151,14 @@ extension PeopleViewController {
     
 }
 
-
+//MARK: - SearchBar
 extension PeopleViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
     }
 }
 
+//MARK: - SwiftUI
 import SwiftUI
 
 struct PeopleVCProvider: PreviewProvider {
