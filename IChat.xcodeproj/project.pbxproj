@@ -14,6 +14,7 @@
 		3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */; };
 		3082C61C2521E15D004D3BF2 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C61A2521E15D004D3BF2 /* WaitingChatCell.swift */; };
 		3082C61D2521E15D004D3BF2 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C61B2521E15D004D3BF2 /* ActiveChatCell.swift */; };
+		3082C6212521FCFE004D3BF2 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C6202521FCFE004D3BF2 /* SectionHeader.swift */; };
 		309FB954251892A2002DEC22 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FB953251892A2002DEC22 /* UIButton + Extension.swift */; };
 		309FB95725189C82002DEC22 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FB95625189C82002DEC22 /* UIFont + Extension.swift */; };
 		309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FB95925189E77002DEC22 /* UIColor + Extension.swift */; };
@@ -45,6 +46,7 @@
 		3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		3082C61A2521E15D004D3BF2 /* WaitingChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitingChatCell.swift; path = IChat/Controllers/Cells/WaitingChatCell.swift; sourceTree = SOURCE_ROOT; };
 		3082C61B2521E15D004D3BF2 /* ActiveChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveChatCell.swift; path = IChat/Controllers/Cells/ActiveChatCell.swift; sourceTree = SOURCE_ROOT; };
+		3082C6202521FCFE004D3BF2 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		309FB953251892A2002DEC22 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		309FB95625189C82002DEC22 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		309FB95925189E77002DEC22 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				30AE64A3251DE952006CBCD4 /* MainTabBarController.swift */,
 				30AE6499251DE3D3006CBCD4 /* ListViewController.swift */,
 				30AE64A6251DEABC006CBCD4 /* PeopleViewController.swift */,
+				3082C6202521FCFE004D3BF2 /* SectionHeader.swift */,
 				3082C5F42521CCB2004D3BF2 /* Cells */,
 			);
 			path = Controllers;
@@ -255,6 +258,7 @@
 			files = (
 				30AE649A251DE3D3006CBCD4 /* ListViewController.swift in Sources */,
 				30AE6454251C796F006CBCD4 /* OneLineTextField.swift in Sources */,
+				3082C6212521FCFE004D3BF2 /* SectionHeader.swift in Sources */,
 				3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */,
 				30AE64A4251DE952006CBCD4 /* MainTabBarController.swift in Sources */,
 				30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */,
