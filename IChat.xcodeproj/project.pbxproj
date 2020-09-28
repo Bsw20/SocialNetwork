@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3082C5DD2520DE30004D3BF2 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 3082C5DB2520DE30004D3BF2 /* waitingChats.json */; };
+		3082C5DE2520DE30004D3BF2 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 3082C5DC2520DE30004D3BF2 /* activeChats.json */; };
+		3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */; };
+		3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C6002521D2F8004D3BF2 /* GradientView.swift */; };
+		3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */; };
+		3082C61C2521E15D004D3BF2 /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C61A2521E15D004D3BF2 /* WaitingChatCell.swift */; };
+		3082C61D2521E15D004D3BF2 /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C61B2521E15D004D3BF2 /* ActiveChatCell.swift */; };
 		309FB954251892A2002DEC22 /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FB953251892A2002DEC22 /* UIButton + Extension.swift */; };
 		309FB95725189C82002DEC22 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FB95625189C82002DEC22 /* UIFont + Extension.swift */; };
 		309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FB95925189E77002DEC22 /* UIColor + Extension.swift */; };
@@ -31,6 +38,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3082C5DB2520DE30004D3BF2 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../../../../../../Downloads/15. урок/IChat/Extensions/UIKIt/waitingChats.json"; sourceTree = "<group>"; };
+		3082C5DC2520DE30004D3BF2 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../../../../../../Downloads/15. урок/IChat/Extensions/UIKIt/activeChats.json"; sourceTree = "<group>"; };
+		3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		3082C6002521D2F8004D3BF2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		3082C61A2521E15D004D3BF2 /* WaitingChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaitingChatCell.swift; path = IChat/Controllers/Cells/WaitingChatCell.swift; sourceTree = SOURCE_ROOT; };
+		3082C61B2521E15D004D3BF2 /* ActiveChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActiveChatCell.swift; path = IChat/Controllers/Cells/ActiveChatCell.swift; sourceTree = SOURCE_ROOT; };
 		309FB953251892A2002DEC22 /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		309FB95625189C82002DEC22 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		309FB95925189E77002DEC22 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
@@ -67,6 +81,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3082C5F42521CCB2004D3BF2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3082C61B2521E15D004D3BF2 /* ActiveChatCell.swift */,
+				3082C61A2521E15D004D3BF2 /* WaitingChatCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3082C60E2521DFF6004D3BF2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */,
+			);
+			name = Protocols;
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		30AA412D25187B4600C8675E = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +122,7 @@
 				30AA413B25187B4600C8675E /* SceneDelegate.swift */,
 				30AA414225187B4A00C8675E /* Assets.xcassets */,
 				30AA414725187B4A00C8675E /* Info.plist */,
+				3082C60E2521DFF6004D3BF2 /* Protocols */,
 				30AE649D251DE74F006CBCD4 /* SignIn&Auth */,
 				30AE64A1251DE935006CBCD4 /* Controllers */,
 				30AE6441251C62A2006CBCD4 /* Extensions */,
@@ -108,6 +141,8 @@
 				30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */,
 				30AE6447251C711A006CBCD4 /* StackView + Extension.swift */,
 				30AE6462251CE668006CBCD4 /* SegmentedControl + Extension.swift */,
+				3082C5DB2520DE30004D3BF2 /* waitingChats.json */,
+				3082C5DC2520DE30004D3BF2 /* activeChats.json */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -118,6 +153,8 @@
 				30AE645D251CD48B006CBCD4 /* AddPhotoView.swift */,
 				30AE6443251C65CE006CBCD4 /* ButtonFormView.swift */,
 				30AE6453251C796F006CBCD4 /* OneLineTextField.swift */,
+				3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */,
+				3082C6002521D2F8004D3BF2 /* GradientView.swift */,
 				30AE643F251C6290006CBCD4 /* UIKit */,
 			);
 			path = Extensions;
@@ -140,6 +177,7 @@
 				30AE64A3251DE952006CBCD4 /* MainTabBarController.swift */,
 				30AE6499251DE3D3006CBCD4 /* ListViewController.swift */,
 				30AE64A6251DEABC006CBCD4 /* PeopleViewController.swift */,
+				3082C5F42521CCB2004D3BF2 /* Cells */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3082C5DD2520DE30004D3BF2 /* waitingChats.json in Resources */,
 				30E656862520959F00223880 /* LaunchScreen.storyboard in Resources */,
 				30AA414325187B4A00C8675E /* Assets.xcassets in Resources */,
+				3082C5DE2520DE30004D3BF2 /* activeChats.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,11 +255,13 @@
 			files = (
 				30AE649A251DE3D3006CBCD4 /* ListViewController.swift in Sources */,
 				30AE6454251C796F006CBCD4 /* OneLineTextField.swift in Sources */,
+				3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */,
 				30AE64A4251DE952006CBCD4 /* MainTabBarController.swift in Sources */,
 				30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */,
 				309FB95725189C82002DEC22 /* UIFont + Extension.swift in Sources */,
 				30AE64A7251DEABC006CBCD4 /* PeopleViewController.swift in Sources */,
 				30AA413E25187B4600C8675E /* AuthViewController.swift in Sources */,
+				3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */,
 				30AE645B251CD1DA006CBCD4 /* SetupProfileViewController.swift in Sources */,
 				30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */,
 				30AE6444251C65CE006CBCD4 /* ButtonFormView.swift in Sources */,
@@ -227,7 +269,10 @@
 				30AA413A25187B4600C8675E /* AppDelegate.swift in Sources */,
 				30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */,
 				30AE6463251CE668006CBCD4 /* SegmentedControl + Extension.swift in Sources */,
+				3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */,
+				3082C61C2521E15D004D3BF2 /* WaitingChatCell.swift in Sources */,
 				309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */,
+				3082C61D2521E15D004D3BF2 /* ActiveChatCell.swift in Sources */,
 				30AA413C25187B4600C8675E /* SceneDelegate.swift in Sources */,
 				309FB954251892A2002DEC22 /* UIButton + Extension.swift in Sources */,
 				30AE6458251C8CCA006CBCD4 /* LoginViewController.swift in Sources */,
