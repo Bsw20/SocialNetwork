@@ -13,6 +13,8 @@
 		3081680D2523267D00EE03B8 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 3081680C2523267D00EE03B8 /* activeChats.json */; };
 		30816810252326F600EE03B8 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3081680F252326F600EE03B8 /* users.json */; };
 		3081681325232E5700EE03B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081681225232E5700EE03B8 /* ProfileViewController.swift */; };
+		3081681625233A3F00EE03B8 /* InsertableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081681525233A3F00EE03B8 /* InsertableTextField.swift */; };
+		3081681A2523428F00EE03B8 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308168192523428F00EE03B8 /* UIView + Extension.swift */; };
 		3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */; };
 		3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C6002521D2F8004D3BF2 /* GradientView.swift */; };
 		3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */; };
@@ -51,6 +53,8 @@
 		3081680C2523267D00EE03B8 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../../../../Downloads/21. урок/IChat/activeChats.json"; sourceTree = "<group>"; };
 		3081680F252326F600EE03B8 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../../../../Downloads/22. урок/IChat/users.json"; sourceTree = "<group>"; };
 		3081681225232E5700EE03B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3081681525233A3F00EE03B8 /* InsertableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertableTextField.swift; sourceTree = "<group>"; };
+		308168192523428F00EE03B8 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		3082C6002521D2F8004D3BF2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				30AE6447251C711A006CBCD4 /* StackView + Extension.swift */,
 				30AE6462251CE668006CBCD4 /* SegmentedControl + Extension.swift */,
 				308168032522564C00EE03B8 /* UIViewController + Extension.swift */,
+				308168192523428F00EE03B8 /* UIView + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				30AE6453251C796F006CBCD4 /* OneLineTextField.swift */,
 				3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */,
 				3082C6002521D2F8004D3BF2 /* GradientView.swift */,
+				3081681525233A3F00EE03B8 /* InsertableTextField.swift */,
 				30AE643F251C6290006CBCD4 /* UIKit */,
 			);
 			path = Extensions;
@@ -301,6 +307,7 @@
 				3082C62B25221D55004D3BF2 /* MUser.swift in Sources */,
 				309FB95725189C82002DEC22 /* UIFont + Extension.swift in Sources */,
 				30AE64A7251DEABC006CBCD4 /* PeopleViewController.swift in Sources */,
+				3081681625233A3F00EE03B8 /* InsertableTextField.swift in Sources */,
 				30AA413E25187B4600C8675E /* AuthViewController.swift in Sources */,
 				3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */,
 				3081681325232E5700EE03B8 /* ProfileViewController.swift in Sources */,
@@ -310,6 +317,7 @@
 				30AE645E251CD48B006CBCD4 /* AddPhotoView.swift in Sources */,
 				30AA413A25187B4600C8675E /* AppDelegate.swift in Sources */,
 				30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */,
+				3081681A2523428F00EE03B8 /* UIView + Extension.swift in Sources */,
 				30AE6463251CE668006CBCD4 /* SegmentedControl + Extension.swift in Sources */,
 				3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */,
 				308167FC252240D000EE03B8 /* UserCell.swift in Sources */,
