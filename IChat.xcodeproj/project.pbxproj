@@ -12,6 +12,7 @@
 		3081680A2523267400EE03B8 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 308168092523267400EE03B8 /* waitingChats.json */; };
 		3081680D2523267D00EE03B8 /* activeChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 3081680C2523267D00EE03B8 /* activeChats.json */; };
 		30816810252326F600EE03B8 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 3081680F252326F600EE03B8 /* users.json */; };
+		3081681325232E5700EE03B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081681225232E5700EE03B8 /* ProfileViewController.swift */; };
 		3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */; };
 		3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C6002521D2F8004D3BF2 /* GradientView.swift */; };
 		3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */; };
@@ -49,6 +50,7 @@
 		308168092523267400EE03B8 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../../../../Downloads/21. урок/IChat/waitingChats.json"; sourceTree = "<group>"; };
 		3081680C2523267D00EE03B8 /* activeChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = activeChats.json; path = "../../../../../../Downloads/21. урок/IChat/activeChats.json"; sourceTree = "<group>"; };
 		3081680F252326F600EE03B8 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = users.json; path = "../../../../../../Downloads/22. урок/IChat/users.json"; sourceTree = "<group>"; };
+		3081681225232E5700EE03B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		3082C6002521D2F8004D3BF2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				30AE64A3251DE952006CBCD4 /* MainTabBarController.swift */,
 				30AE6499251DE3D3006CBCD4 /* ListViewController.swift */,
 				30AE64A6251DEABC006CBCD4 /* PeopleViewController.swift */,
+				3081681225232E5700EE03B8 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				30AE64A7251DEABC006CBCD4 /* PeopleViewController.swift in Sources */,
 				30AA413E25187B4600C8675E /* AuthViewController.swift in Sources */,
 				3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */,
+				3081681325232E5700EE03B8 /* ProfileViewController.swift in Sources */,
 				30AE645B251CD1DA006CBCD4 /* SetupProfileViewController.swift in Sources */,
 				30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */,
 				30AE6444251C65CE006CBCD4 /* ButtonFormView.swift in Sources */,
