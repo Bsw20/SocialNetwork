@@ -18,6 +18,8 @@
 		3081681D2523488600EE03B8 /* ChatRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081681C2523488600EE03B8 /* ChatRequestViewController.swift */; };
 		30816834252397A700EE03B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30816833252397A700EE03B8 /* GoogleService-Info.plist */; };
 		30816839252488E200EE03B8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30816838252488E200EE03B8 /* AuthService.swift */; };
+		3081683D2524AA4E00EE03B8 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081683C2524AA4E00EE03B8 /* Validators.swift */; };
+		3081684D2524AF6400EE03B8 /* AuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3081684C2524AF6400EE03B8 /* AuthError.swift */; };
 		3082C5E32520DE90004D3BF2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */; };
 		3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C6002521D2F8004D3BF2 /* GradientView.swift */; };
 		3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */; };
@@ -64,6 +66,8 @@
 		3081681C2523488600EE03B8 /* ChatRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRequestViewController.swift; sourceTree = "<group>"; };
 		30816833252397A700EE03B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30816838252488E200EE03B8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		3081683C2524AA4E00EE03B8 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		3081684C2524AF6400EE03B8 /* AuthError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthError.swift; sourceTree = "<group>"; };
 		3082C5E22520DE90004D3BF2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		3082C6002521D2F8004D3BF2 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		3082C60B2521DFD3004D3BF2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
@@ -117,6 +121,15 @@
 				30816838252488E200EE03B8 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		3081686C2524BB0100EE03B8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3081684C2524AF6400EE03B8 /* AuthError.swift */,
+				3081683C2524AA4E00EE03B8 /* Validators.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		3082C5F42521CCB2004D3BF2 /* Cells */ = {
@@ -176,20 +189,21 @@
 		30AA413825187B4600C8675E /* IChat */ = {
 			isa = PBXGroup;
 			children = (
-				308168372524870800EE03B8 /* Services */,
 				30AA413925187B4600C8675E /* AppDelegate.swift */,
 				30AA413B25187B4600C8675E /* SceneDelegate.swift */,
+				308168372524870800EE03B8 /* Services */,
 				30AE649D251DE74F006CBCD4 /* SignIn&Auth */,
 				3082C60E2521DFF6004D3BF2 /* Protocols */,
 				30AE64A1251DE935006CBCD4 /* Controllers */,
 				30AE6441251C62A2006CBCD4 /* Extensions */,
+				3081686C2524BB0100EE03B8 /* Helpers */,
 				30E656882520959F00223880 /* LaunchScreen.storyboard */,
 				308168092523267400EE03B8 /* waitingChats.json */,
 				3081680C2523267D00EE03B8 /* activeChats.json */,
 				3081680F252326F600EE03B8 /* users.json */,
+				30816833252397A700EE03B8 /* GoogleService-Info.plist */,
 				30AA414225187B4A00C8675E /* Assets.xcassets */,
 				30AA414725187B4A00C8675E /* Info.plist */,
-				30816833252397A700EE03B8 /* GoogleService-Info.plist */,
 			);
 			path = IChat;
 			sourceTree = "<group>";
@@ -389,8 +403,10 @@
 				3082C6212521FCFE004D3BF2 /* SectionHeader.swift in Sources */,
 				3082C6012521D2F8004D3BF2 /* GradientView.swift in Sources */,
 				30AE64A4251DE952006CBCD4 /* MainTabBarController.swift in Sources */,
+				3081684D2524AF6400EE03B8 /* AuthError.swift in Sources */,
 				30AE6451251C76E3006CBCD4 /* SignUpViewController.swift in Sources */,
 				3082C62B25221D55004D3BF2 /* MUser.swift in Sources */,
+				3081683D2524AA4E00EE03B8 /* Validators.swift in Sources */,
 				309FB95725189C82002DEC22 /* UIFont + Extension.swift in Sources */,
 				30AE64A7251DEABC006CBCD4 /* PeopleViewController.swift in Sources */,
 				3081681625233A3F00EE03B8 /* InsertableTextField.swift in Sources */,
