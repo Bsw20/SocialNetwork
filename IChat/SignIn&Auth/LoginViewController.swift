@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+
+
 class LoginViewController: UIViewController {
     
     let welcomeLabel = UILabel(text: "Welcome back!", font: UIFont.avenir26())
@@ -31,6 +34,8 @@ class LoginViewController: UIViewController {
         return button
     }()
     
+    weak var delegate: AuthNavigationDelegate?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +43,7 @@ class LoginViewController: UIViewController {
         googleButton.customizeGoogleButton()
         setupConstraints()
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        signUpButtoon.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
     
     @objc private func loginButtonTapped() {
@@ -52,6 +58,13 @@ class LoginViewController: UIViewController {
                 self.showAlert(with: "Ошибка", and: error.localizedDescription)
             }
         }
+    }
+    
+    @objc private func signUpButtonTapped() {
+        dismiss(animated: true) {
+            self.delegate?.toSignUpVC()
+        }
+//        present(SignUpViewController(), animated: true, completion: nil)
     }
     
 }
