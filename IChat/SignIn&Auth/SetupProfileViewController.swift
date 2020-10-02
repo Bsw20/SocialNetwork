@@ -49,6 +49,7 @@ class SetupProfileViewController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
         goToChatsButton.addTarget(self, action: #selector(goToChatsButtonTapped), for: .touchUpInside)
+        fullImageView.plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
     }
     
     @objc func goToChatsButtonTapped() {
@@ -56,7 +57,7 @@ class SetupProfileViewController: UIViewController {
             id: currentUser.uid,
             email: currentUser.email!,
             username: fullNameTextField.text,
-            avatarImageSrting: "nil",
+            avatarImage: fullImageView.circeImageView.image,
             description: aboutMeTextField.text,
             sex: sexSegmentedControl.titleForSegment(at: sexSegmentedControl.selectedSegmentIndex)) { (result) in
             switch result {
@@ -70,6 +71,13 @@ class SetupProfileViewController: UIViewController {
                 self.showAlert(with: "Ошибка!", and: error.localizedDescription)
             }
         }
+    }
+    
+    @objc private func plusButtonTapped() {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true, completion: nil)
     }
     
 }
@@ -115,6 +123,15 @@ extension SetupProfileViewController {
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
         
+    }
+}
+
+//MARK: - UIImagePickerControllerDelegate
+extension SetupProfileViewController: UINavigationControllerDelegate,UIImagePickerControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        fullImageView.circeImageView.image = image
     }
 }
 

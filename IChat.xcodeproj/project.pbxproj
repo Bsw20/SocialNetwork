@@ -11,6 +11,8 @@
 		3010AC742525C0B700C344F4 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010AC732525C0B700C344F4 /* FirestoreService.swift */; };
 		3010ACA22525C75800C344F4 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010ACA12525C75800C344F4 /* UserError.swift */; };
 		3010AD07252711A600C344F4 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010AD06252711A600C344F4 /* UIApplication + Extension.swift */; };
+		307403C6252718BB008BCF9D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307403C5252718BB008BCF9D /* StorageService.swift */; };
+		307403C925271C66008BCF9D /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307403C825271C66008BCF9D /* UIImage + Extension.swift */; };
 		308167FC252240D000EE03B8 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308167FB252240D000EE03B8 /* UserCell.swift */; };
 		308168042522564C00EE03B8 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308168032522564C00EE03B8 /* UIViewController + Extension.swift */; };
 		3081680A2523267400EE03B8 /* waitingChats.json in Resources */ = {isa = PBXBuildFile; fileRef = 308168092523267400EE03B8 /* waitingChats.json */; };
@@ -53,14 +55,17 @@
 		30AEE2C32518A2AE00FA0249 /* Label + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */; };
 		30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */; };
 		30E656862520959F00223880 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30E656882520959F00223880 /* LaunchScreen.storyboard */; };
-		43C75ED5A836BA29F9588AD9 /* Pods_IChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDA81B51353DFAE6B1CBC9E /* Pods_IChat.framework */; };
+		339D32AA7422AA374D4D7238 /* Pods_IChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129E5E3BF67860A5E0E4B3CF /* Pods_IChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		129E5E3BF67860A5E0E4B3CF /* Pods_IChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3010AC562525B82C00C344F4 /* AuthNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationDelegate.swift; sourceTree = "<group>"; };
 		3010AC732525C0B700C344F4 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		3010ACA12525C75800C344F4 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		3010AD06252711A600C344F4 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
+		307403C5252718BB008BCF9D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		307403C825271C66008BCF9D /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		308167FB252240D000EE03B8 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		308168032522564C00EE03B8 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		308168092523267400EE03B8 /* waitingChats.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = waitingChats.json; path = "../../../../../../Downloads/21. урок/IChat/waitingChats.json"; sourceTree = "<group>"; };
@@ -105,9 +110,8 @@
 		30AEE2C22518A2AE00FA0249 /* Label + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label + Extension.swift"; sourceTree = "<group>"; };
 		30AEE2C52518A3A900FA0249 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		30E656872520959F00223880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4657308B53C8DC20B82E3010 /* Pods-IChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.debug.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.debug.xcconfig"; sourceTree = "<group>"; };
-		BF9037E5EF3350541F9E0B2B /* Pods-IChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.release.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.release.xcconfig"; sourceTree = "<group>"; };
-		FCDA81B51353DFAE6B1CBC9E /* Pods_IChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D030C56C246917FA65454385 /* Pods-IChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.debug.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D822178C039B4A3EA6254C06 /* Pods-IChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IChat.release.xcconfig"; path = "Target Support Files/Pods-IChat/Pods-IChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43C75ED5A836BA29F9588AD9 /* Pods_IChat.framework in Frameworks */,
+				339D32AA7422AA374D4D7238 /* Pods_IChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +132,7 @@
 				3082C63025221E14004D3BF2 /* Models */,
 				30816838252488E200EE03B8 /* AuthService.swift */,
 				3010AC732525C0B700C344F4 /* FirestoreService.swift */,
+				307403C5252718BB008BCF9D /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -185,7 +190,7 @@
 				30AA413825187B4600C8675E /* IChat */,
 				30AA413725187B4600C8675E /* Products */,
 				6D6FDB541A348A3390B516F7 /* Pods */,
-				4496AA3044566D8700A78917 /* Frameworks */,
+				7D808867D764CDDF4881A2BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +237,7 @@
 				308168032522564C00EE03B8 /* UIViewController + Extension.swift */,
 				308168192523428F00EE03B8 /* UIView + Extension.swift */,
 				3010AD06252711A600C344F4 /* UIApplication + Extension.swift */,
+				307403C825271C66008BCF9D /* UIImage + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -275,21 +281,21 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4496AA3044566D8700A78917 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FCDA81B51353DFAE6B1CBC9E /* Pods_IChat.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6D6FDB541A348A3390B516F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4657308B53C8DC20B82E3010 /* Pods-IChat.debug.xcconfig */,
-				BF9037E5EF3350541F9E0B2B /* Pods-IChat.release.xcconfig */,
+				D030C56C246917FA65454385 /* Pods-IChat.debug.xcconfig */,
+				D822178C039B4A3EA6254C06 /* Pods-IChat.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7D808867D764CDDF4881A2BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				129E5E3BF67860A5E0E4B3CF /* Pods_IChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,12 +305,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30AA414A25187B4A00C8675E /* Build configuration list for PBXNativeTarget "IChat" */;
 			buildPhases = (
-				0752AA5ACFA1615D6466C824 /* [CP] Check Pods Manifest.lock */,
+				CF16199846059A3FC9B135A5 /* [CP] Check Pods Manifest.lock */,
 				30AA413225187B4600C8675E /* Sources */,
 				30AA413325187B4600C8675E /* Frameworks */,
 				30AA413425187B4600C8675E /* Resources */,
-				5944DA9F3AA1B2A084D552B8 /* [CP] Embed Pods Frameworks */,
-				05A09E8A7160ECE610C70866 /* [CP] Copy Pods Resources */,
+				4659D70EA8B607BA0080B74D /* [CP] Embed Pods Frameworks */,
+				9816D6BEDE4007CB6B9D84B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,7 +370,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05A09E8A7160ECE610C70866 /* [CP] Copy Pods Resources */ = {
+		4659D70EA8B607BA0080B74D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9816D6BEDE4007CB6B9D84B4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,7 +404,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0752AA5ACFA1615D6466C824 /* [CP] Check Pods Manifest.lock */ = {
+		CF16199846059A3FC9B135A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,23 +424,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5944DA9F3AA1B2A084D552B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IChat/Pods-IChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -455,12 +461,14 @@
 				30AA413A25187B4600C8675E /* AppDelegate.swift in Sources */,
 				30AEE2C62518A3A900FA0249 /* UIImageView + Extension.swift in Sources */,
 				3081681A2523428F00EE03B8 /* UIView + Extension.swift in Sources */,
+				307403C6252718BB008BCF9D /* StorageService.swift in Sources */,
 				30AE6463251CE668006CBCD4 /* SegmentedControl + Extension.swift in Sources */,
 				30816839252488E200EE03B8 /* AuthService.swift in Sources */,
 				3082C60C2521DFD3004D3BF2 /* SelfConfiguringCell.swift in Sources */,
 				308167FC252240D000EE03B8 /* UserCell.swift in Sources */,
 				308168042522564C00EE03B8 /* UIViewController + Extension.swift in Sources */,
 				3082C61C2521E15D004D3BF2 /* WaitingChatCell.swift in Sources */,
+				307403C925271C66008BCF9D /* UIImage + Extension.swift in Sources */,
 				309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */,
 				3082C61D2521E15D004D3BF2 /* ActiveChatCell.swift in Sources */,
 				30AA413C25187B4600C8675E /* SceneDelegate.swift in Sources */,
@@ -609,7 +617,7 @@
 		};
 		30AA414B25187B4A00C8675E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4657308B53C8DC20B82E3010 /* Pods-IChat.debug.xcconfig */;
+			baseConfigurationReference = D030C56C246917FA65454385 /* Pods-IChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -630,7 +638,7 @@
 		};
 		30AA414C25187B4A00C8675E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF9037E5EF3350541F9E0B2B /* Pods-IChat.release.xcconfig */;
+			baseConfigurationReference = D822178C039B4A3EA6254C06 /* Pods-IChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
