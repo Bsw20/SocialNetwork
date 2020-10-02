@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class AuthViewController: UIViewController {
     
@@ -32,9 +33,11 @@ class AuthViewController: UIViewController {
         setupConstraits()
         emailButton.addTarget(self, action: #selector(emailButtonTapped), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
         
         signUpVC.delegate = self
         loginVC.delegate = self
+        GIDSignIn.sharedInstance()?.delegate = self
         
     }
     
@@ -46,6 +49,11 @@ class AuthViewController: UIViewController {
     @objc private  func loginButtonTapped() {
         print(#function)
         present(loginVC, animated: true, completion: nil)
+    }
+    
+    @objc private func googleButtonTapped() {
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
     }
     
 
@@ -82,6 +90,39 @@ extension AuthViewController {
         
         
     }
+}
+
+// MARK: - GIDSigninDelegate
+extension AuthViewController: GIDSignInDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        AuthService.shared.googleLogin(user: user, error: error) { (result) in
+            switch result {
+            
+            case .success(let user):
+                FirestoreService.shared.getUserData(user: user) { (result) in
+                    switch result {
+                    case .success(let mUser):
+                        
+                        UIApplication.getTopViewController()?.showAlert(with: "Успешно", and: "Вы авторизованы") {
+                            let mainTabBarController = MainTabBarController(currentUser: mUser)
+                            mainTabBarController.modalPresentationStyle = .fullScreen
+                            UIApplication.getTopViewController()?.present(mainTabBarController, animated: true, completion: nil)
+                        }
+                    case .failure(_):
+                        UIApplication.getTopViewController()?.showAlert(with: "Успешно", and: "Вы зарегистрированы") {
+                            UIApplication.getTopViewController()?.present(SetupProfileViewController(currentUser: user), animated: true, completion: nil)
+                        }
+                        
+                    }
+                }
+            case .failure(let error):
+                UIApplication.getTopViewController()?.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        }
+    }
+//    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+//        <#code#>
+//    }
 }
 
 extension AuthViewController: AuthNavigationDelegate {
