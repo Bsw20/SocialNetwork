@@ -12,6 +12,7 @@
 		3010ACA22525C75800C344F4 /* UserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010ACA12525C75800C344F4 /* UserError.swift */; };
 		3010AD07252711A600C344F4 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010AD06252711A600C344F4 /* UIApplication + Extension.swift */; };
 		3051F54C252AEF54001A06ED /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051F54B252AEF54001A06ED /* ListenerService.swift */; };
+		3051F56B252B1062001A06ED /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051F56A252B1062001A06ED /* MMessage.swift */; };
 		307403C6252718BB008BCF9D /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307403C5252718BB008BCF9D /* StorageService.swift */; };
 		307403C925271C66008BCF9D /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307403C825271C66008BCF9D /* UIImage + Extension.swift */; };
 		308167FC252240D000EE03B8 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308167FB252240D000EE03B8 /* UserCell.swift */; };
@@ -65,6 +66,7 @@
 		3010ACA12525C75800C344F4 /* UserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserError.swift; sourceTree = "<group>"; };
 		3010AD06252711A600C344F4 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
 		3051F54B252AEF54001A06ED /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		3051F56A252B1062001A06ED /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		307403C5252718BB008BCF9D /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		307403C825271C66008BCF9D /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		308167FB252240D000EE03B8 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -133,8 +135,9 @@
 			children = (
 				3082C63025221E14004D3BF2 /* Models */,
 				30816838252488E200EE03B8 /* AuthService.swift */,
-				3010AC732525C0B700C344F4 /* FirestoreService.swift */,
 				307403C5252718BB008BCF9D /* StorageService.swift */,
+				3010AC732525C0B700C344F4 /* FirestoreService.swift */,
+				30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */,
 				3051F54B252AEF54001A06ED /* ListenerService.swift */,
 			);
 			path = Services;
@@ -183,6 +186,7 @@
 			children = (
 				3082C62A25221D55004D3BF2 /* MUser.swift */,
 				3082C62D25221D6F004D3BF2 /* MChat.swift */,
+				3051F56A252B1062001A06ED /* MMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				30AA413D25187B4600C8675E /* AuthViewController.swift */,
-				30AE6450251C76E3006CBCD4 /* SignUpViewController.swift */,
 				30AE6457251C8CCA006CBCD4 /* LoginViewController.swift */,
 				30AE645A251CD1DA006CBCD4 /* SetupProfileViewController.swift */,
 			);
@@ -475,6 +478,7 @@
 				307403C925271C66008BCF9D /* UIImage + Extension.swift in Sources */,
 				309FB95A25189E77002DEC22 /* UIColor + Extension.swift in Sources */,
 				3082C61D2521E15D004D3BF2 /* ActiveChatCell.swift in Sources */,
+				3051F56B252B1062001A06ED /* MMessage.swift in Sources */,
 				30AA413C25187B4600C8675E /* SceneDelegate.swift in Sources */,
 				309FB954251892A2002DEC22 /* UIButton + Extension.swift in Sources */,
 				30AE6458251C8CCA006CBCD4 /* LoginViewController.swift in Sources */,
