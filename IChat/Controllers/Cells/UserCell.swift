@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 class UserCell: UICollectionViewCell {
 
@@ -76,9 +77,15 @@ extension UserCell: SelfConfiguringCell {
     
     func configure<U>(with value: U) where U : Hashable {
         guard let user = value as? MUser else { return }
-        userImageView.image = UIImage(named: user.avatarStringURL)
         userName.text = user.username
+        guard let url = URL(string: user.avatarStringURL) else { return } //handle 'else' with default image
+        userImageView.sd_setImage(with: url, completed: nil)
         
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        userImageView.image = nil
     }
     
 }

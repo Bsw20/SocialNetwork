@@ -12,7 +12,9 @@ import Firebase
 
 class PeopleViewController: UIViewController {
     
-    let users = [MUser]()
+    var users = [MUser]()
+    private var usersListener: ListenerRegistration?
+    
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, MUser>!
     enum Section: Int, CaseIterable{
@@ -32,6 +34,10 @@ class PeopleViewController: UIViewController {
         title = currentUser.username
     }
     
+    deinit {
+        usersListener?.remove()
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -42,9 +48,18 @@ class PeopleViewController: UIViewController {
         setupSearchBar()
         setupCollectionView()
         createDataSourse()
-        reloadData(with: nil)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Log out", style: .plain, target: self, action: #selector(signOut))
+        
+        usersListener = ListenerService.shared.usersObserve(users: users, completion: { (result) in
+            switch result {
+            case .success(let users):
+                self.users = users
+                self.reloadData(with: nil)
+            case .failure(let error):
+                self.showAlert(with: "Ошибка", and: error.localizedDescription)
+            }
+        })
         
     }
     
@@ -106,6 +121,7 @@ extension PeopleViewController {
     private func createDataSourse() {
         dataSource = UICollectionViewDiffableDataSource<Section, MUser> (collectionView: collectionView, cellProvider: { (collectionView, indexPath, user) -> UICollectionViewCell? in
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section kind") }
+            print("Created")
             
             switch section {
             
@@ -124,6 +140,8 @@ extension PeopleViewController {
             sectionHeader.configure(text: section.description(usersCount: items.count),
                                     font: .systemFont(ofSize: 36, weight: .light ),
                                     textColor: .label)
+            
+            print("supplementary")
             return sectionHeader
         }
     }
