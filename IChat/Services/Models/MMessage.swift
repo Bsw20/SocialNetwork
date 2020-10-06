@@ -29,7 +29,7 @@ struct MMessage: Hashable {
     init?(document: QueryDocumentSnapshot) {
         let data = document.data()
         guard let sentDate = data["created"] as? Timestamp else { return nil }
-        guard let senderUsername = data["senderUsername"] as? String else { return nil }
+        guard let senderUsername = data["senderName"] as? String else { return nil }
         guard let content = data["content"] as? String else { return nil }
         guard let senderID = data["senderID"] as? String else { return nil }
         

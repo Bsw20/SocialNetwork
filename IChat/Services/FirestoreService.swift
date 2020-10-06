@@ -112,7 +112,7 @@ class FirestoreService {
         }
     }
     
-    func deleteMessages(chat: MChat, complection: @escaping(Result<Void, Error>) -> Void) {
+    func deleteMessages(chat: MChat, complection: @escaping(Result<Void, Error>) -> Void) {  //replace 'complection' with 'completion'
         let reference = waitingChatsRef.document(chat.friendId).collection("messages")
         
         getWaitingChatMessages(chat: chat) { (result) in
@@ -147,6 +147,7 @@ class FirestoreService {
             
             for document in querySnapshot!.documents {  //handle that !
                 guard let message = MMessage(document: document) else { return }
+                print("Message parsed")
                 messages.append(message)
             }
             

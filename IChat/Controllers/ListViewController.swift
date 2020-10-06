@@ -246,6 +246,7 @@ extension ListViewController: WaitingChatsNavigation {
             switch result {
             
             case .success():
+                
                 self.showAlert(with: "Успешно", and: "Чат с \(chat.friendUsername) был удален")
             case .failure(let error):
                 self.showAlert(with: "Ошибка", and: error.localizedDescription)
