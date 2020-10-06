@@ -12,13 +12,7 @@ import Firebase
 import MessageKit
 
 struct MMessage: Hashable, MessageType  {
-
-    
     var sender: SenderType
-    
-
-    
-
     let content: String
     let sentDate: Date
     let id: String?
@@ -69,4 +63,12 @@ struct MMessage: Hashable, MessageType  {
     static func == (lhs: MMessage, rhs: MMessage) -> Bool {
         return lhs.messageId == rhs.messageId
     }
+}
+
+extension MMessage: Comparable {
+    static func < (lhs: MMessage, rhs: MMessage) -> Bool {
+        return lhs.sentDate < rhs.sentDate
+    }
+    
+    
 }
